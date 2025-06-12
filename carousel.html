@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style./css">
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Urbanist',sans-serif;
+    }
+:root{
+    --bs-dark-color:rgb(0, 0, 0);
+    --bs-light-primary:#fdf7f7;
+    --bs-main-color:#fff;
+    --bs-primary-color:#c6c6c6;
+    --secondary-color:#29a9fd;
+    --bs-supporting-color:#c850c0;
+}
+
+h1,h2,h3,h4,h5{
+    font-family:'Lexend Deca',sans-serif;
+    color:var(--bs-dark-color);
+}
+h1{
+    font-size:3.8rem;
+}
+h2{
+    line-height:3rew;
+    font-weight:600;
+    font-size:3.4rem;
+}
+
+p{
+
+    margin:0;
+    font-weight:400;
+    font-size:1rem;
+    color:var(--bs-dark-color);
+    letter-spacing:0.07rem;
+    line-height:1.55rem;
+    font-synthesis:none;
+    text-rendering:optimizeLegibility;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none
+}
+
+.hero-video--section{
+    max-width:100%;
+    height:auto;
+    width:30rem;
+    border-radius:2rem;
+}
+   .hero-section .container{
+    display:grid;
+    place-content:center;
+    height:inherit;
+   }
+   .bg-main{
+    height:80vh;
+    position:relative;
+
+   }
+   .bg-theme{
+    color:var(--bs-supporting-color);
+    background-image:none !important;
+   }
+   .hero-video--section{
+    width:30rem;
+    border-radius:2 rem;
+   }
+
+.nav-link{
+    color: var(--bs-main-color);
+    font-weight:bold;
+
+
+}
+.bg-color{
+    background-color:var(--bs-light-primary);
+}
+.text-light-grey{
+    color:#ffffff;
+}
+button,a{
+    font-size:1.15 !important;
+    letter-spacing:0.03 rem;
+    word-spacing:.1rem;
+}
+
+.custom-shape-divider-bottom-168431082{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    overflow:hidden;
+    line-height:0;
+    transform:rotate(180deg);
+
+}
+.custom-shape-divider-bottom-1684310862 svg{
+    position:relative;
+    display:block;
+    width:calc(100% * 1.3px);
+    height:150px;
+
+
+}
+.custom-shape-divider-bottom-16843110862 .shape-fill{
+    fill:#ffffff;
+}
+
+.common-heading{
+    font-size:2.8rem;
+    font-weight:500;
+    letter-spacing:0.01rem !important;
+}
+
+
+
+
+
+
+.common-title{
+    margin-bottom:4.2rem;
+    
+}
+
+.services -section{
+    padding:6rem 0 3rem 0!important;
+}
+
+.services-section{
+    padding:6rem 0 3rem 0 !important;
+}
+.card-box:hover{
+    box-shadow:rgba(149,157,165,0.2);
+}
+
+*{
+  margin:0;
+  padding:0;
+  font-family:vardana;
+  color:white;
+
+}
+footer{
+  width:100%;
+  height:auto;
+  background:rgb(29, 124, 148);
+}
+.container{
+  width:1140px;
+  height:auto;
+  margin:auto;
+  padding:40px 0px;
+}
+.box{
+  width:33.3%;
+  height:auto;
+  float:left;
+}
+h1{
+  font-size:32px;
+  font-weight:500;
+  padding:8px 12px;
+}
+.about{
+  padding:8px 12px;
+}
+.copyright{
+  text-align:center;
+  padding:30px 0px;
+  clear:both;
+}
+
+.quick , social{
+  text-align: center;
+  padding:8px 13px;
+
+}
+.quick li,s-link li{
+  padding:8px 12px;
+  text-align:center;
+  list-style-type:none;
+  cursor:pointer;
+}
+
+.q-link li :hover{
+  color:#ffffff;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+  <body>
+    
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-5 pt-lg-5">
+  <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-capitalize" aria-current="page"href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-capitalize" aria-current="page" href="#">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-capitalize" aria-current="page"href="#">Contact</a>
+        </li>
+
+      
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!--hERO part-->
+<section class="bg-main bg-color hero-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+
+            
+                <h1 class="_text-capitalize fw-bolder-twe_">We Collect High Quality Leads</h1>
+           
+            <div class="text-center w-100 text-md-start">
+                <button class="text-capitalizee btn btn-primary px-5 py-2"data-bs-toggle="tooltip" data-bs-target="Contact Now">Contact Us</button>
+            </div>
+            <!--fixed map-->
+            </div>
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="text-center text-lg-end">
+<img src="file:///C:/Users/Vishakha/Downloads/nature-scenic-trees-and-green-meadow-field-rural-landscape-with-bright-cloudy-blue-sky-idyllic-adventure-landscape-natural-colorful-foliage-photo.jpg" loop autoplay muted class="hero-video--section">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+<!--Service sections
+
+-->
+<section class="service-section">
+    <div class="container text-center common-title fw-bold">
+        <h2 class="common-heading"> What we will do for </h2>
+        <hr class="w-25 mx-auto">
+    </div>
+
+     <div class="container py-5">
+    <h2 class="text-center mb-5">Our Services</h2>
+
+    <!-- Flex container for cards -->
+    <div class="d-flex flex-wrap justify-content-center gap-4">
+
+      <!-- Card 1 -->
+      <div class="card p-4 rounded-2" style="width: 22rem;">
+        <div class="text-center">
+          <img src="file:///C:/Users/Vishakha/Downloads/download%20(1).png" alt="Link Building" class="img-fluid mb-3" style="width: 200px;">
+          <h5 class="fw-normal mb-3">Link Building</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ut labore est recusandae, omnis quasi cumque nostrum similique sit dolore molestiae.</p>
+          <a href="#service" class="btn btn-outline-primary mt-3">
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card p-4 rounded-2" style="width: 22rem;">
+        <div class="text-center">
+          <img src="file:///C:/Users/Vishakha/Downloads/download%20(1).png" alt="SEO Optimization" class="img-fluid mb-3" style="width: 200px;">
+          <h5 class="fw-normal mb-3">SEO Optimization</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, ligula a egestas fermentum, felis justo porttitor magna.</p>
+          <a href="#service" class="btn btn-outline-primary mt-3">
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card p-4 rounded-2" style="width: 22rem;">
+        <div class="text-center">
+          <img src="file:///C:/Users/Vishakha/Downloads/download%20(1).png" alt="Content Marketing" class="img-fluid mb-3" style="width: 200px;">
+          <h5 class="fw-normal mb-3">Content Marketing</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates sunt facilis accusamus reprehenderit dolorum adipisci quos, eveniet.</p>
+          <a href="#service" class="btn btn-outline-primary mt-3">
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div> <!-- End of flex container -->
+
+  </div> <!-- End of container -->         
+              
+                </div>
+       
+ <div class="container mt-5 carousel-card">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="file:///C:/Users/Vishakha/Downloads/images%20(1).jpeg" class="img-fluid card-img-top" alt="Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Nature View 1</h5>
+                <p class="card-text">Beautiful green meadow.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="file:///C:/Users/Vishakha/Downloads/incredibly-beautiful-sunset-sun-lake-sunrise-landscape-panorama-nature-sky-amazing-colorful-clouds-fantasy-design-115177001.webp" class="img-fluid card-img-top" alt="Image 2">
+              <div class="card-body">
+                <h5 class="card-title">Nature View 2</h5>
+                <p class="card-text">Peaceful countryside.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="file:///C:/Users/Vishakha/Downloads/ai-generated-empty-wooden-table-on-the-natural-background-for-product-display-free-photo.jpg" class="img-fluid card-img-top" alt="Image 3">
+              <div class="card-body">
+                <h5 class="card-title">Nature View 3</h5>
+                <p class="card-text">Scenic mountain view.</p>
+              </div></div>
+              
+              
+          </div><div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="file:///C:/Users/Vishakha/Pictures/ICEICO%20WOrk/2023-07-17%20(2).png" class="img-fluid card-img-top" alt="Image 4">
+              <div class="card-body">
+                <h5 class="card-title">Nature View 4</h5>
+                <p class="card-text">Sunset over the hills.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="file:///C:/Users/Vishakha/Downloads/download%20(1).jpeg" class="img-fluid card-img-top" alt="Image 5">
+              <div class="card-body">
+                <h5 class="card-title">Nature View 5</h5>
+                <p class="card-text">River through the forest.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="file:///C:/Users/Vishakha/Downloads/download.jpeg" class="img-fluid card-img-top" alt="Image 6">
+              <div class="card-body">
+                <h5 class="card-title">Nature View 6</h5>
+                <p class="card-text">Rolling green hills.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+<div class="box">
+  <h1 class="quick">Quick Name</h1>
+  <ul class="q-link">
+    <li>Home</li>
+    <li>About</li>
+    <li>Gallery</li>
+    <li>contact </li>
+  </ul>
+
+</div>
+<div class="box">
+
+  <h1 class="social">social Links</h1>
+  <ul class="s-link">
+
+    <li>Twitter</li>
+    <li>Linkedin</li>
+    <li>Facebook</li>
+    <li>Instagram</li>
+  </ul>
+</div>
+<div class="box"></div>
+    </div>
+    <div class="copyright">All Right Reseraved &copy 2025</div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+<script>
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+</script>
+</body>
+</html>
